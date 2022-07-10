@@ -22,13 +22,18 @@
 
     <div class="text-center">
         <?php
-        
-        // Get the day and month
-        $currentDay = Date("d");
-        $currentMonth = Date("m");
 
-        // $currentDay = "5";
-        // $currentMonth = "6";
+        // Get current time from server
+
+        $countdown = 
+
+
+        // Get the day and month
+        //$currentDay = Date("d");
+        //$currentMonth = Date("m");
+
+         $currentDay = "5";
+         $currentMonth = "6";
 
         // If current day and month != June 5, dont display confetti and birthday message
         if ($currentDay != "5" && $currentMonth != "6") {
@@ -37,6 +42,8 @@
             echo "<h1 class='display-1 mt-5'>IT IS NOAH'S BIRTHDAY</h1>";
             echo "<canvas id='my-canvas'></canvas>" ;
         }
+
+
         
         ?>
     </div>
