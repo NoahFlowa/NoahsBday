@@ -1,5 +1,5 @@
 # Noah's Birthday
-###### [https://noahsbday.com](https://noahsbday.com)
+###### [https://bday.noahosterhout.com](https://bday.noahosterhout.com)
 
 ***
 
