@@ -45,7 +45,7 @@
               echo "<canvas id='my-canvas'></canvas>" ;
           } else {
               echo "<br/><br/><br/><br/>";
-              echo "<h1>It's not your birthday yet!</h1>";
+              echo "<h1>It's not Noahs birthday yet!</h1>";
               echo "<h2>There are $daysUntilBirthday days until Noah's birthday!</h2>";
           }
         
