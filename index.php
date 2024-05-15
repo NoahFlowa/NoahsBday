@@ -29,12 +29,24 @@
         // Get current day
         $currentDay = date('d');
 
+        // Get current year
+        $currentYear = date('Y');
+
+        // Get the time between now and Noah's birthday which is June 5th of the current year
+        if ($currentMonth >= 6 && $currentDay > 5) {
+          $daysUntilBirthday = date_diff(date_create("$currentYear-$currentMonth-$currentDay"), date_create(($currentYear + 1) . "-06-05"))->format('%a');
+        } else {
+          $daysUntilBirthday = date_diff(date_create("$currentYear-$currentMonth-$currentDay"), date_create("$currentYear-06-05"))->format('%a');
+        }
+
         if ($currentMonth == 6 && $currentDay == 5) {
             echo "<br/><br/><br/><br/>";
             echo "<h1>Happy Birthday Noah!</h1>";
             echo "<canvas id='my-canvas'></canvas>" ;
         } else {
+            echo "<br/><br/><br/><br/>";
             echo "<h1>It's not your birthday yet!</h1>";
+            echo "<h2>There are $daysUntilBirthday days until Noah's birthday!</h2>";
         }
 
 
